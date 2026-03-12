@@ -9,6 +9,9 @@ public class BookMyStayApp {
         Room single = new SingleRoom();
         Room doubleRoom = new DoubleRoom();
         Room suite = new SuiteRoom();
+        RoomInventory inventory = new RoomInventory();
+
+        inventory.displayInventory();
 
         // Static availability
         int singleAvailable = 5;
