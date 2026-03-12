@@ -1,20 +1,29 @@
-/**
- * Hotel Booking Management System
- * Demonstrates the starting point of the application.
- *
- * @author Student
- * @version 1.0
- */
-
 public class BookMyStayApp {
 
     public static void main(String[] args) {
 
-        System.out.println("=======================================");
-        System.out.println("     Welcome to Book My Stay App       ");
-        System.out.println("     Hotel Booking System v1.0         ");
-        System.out.println("=======================================");
+        System.out.println("Welcome to Book My Stay App");
+        System.out.println("Hotel Booking System v1.0\n");
 
-        System.out.println("Application started successfully.");
+        // Create room objects
+        Room single = new SingleRoom();
+        Room doubleRoom = new DoubleRoom();
+        Room suite = new SuiteRoom();
+
+        // Static availability
+        int singleAvailable = 5;
+        int doubleAvailable = 3;
+        int suiteAvailable = 2;
+
+        System.out.println("Available Rooms:\n");
+
+        single.displayDetails();
+        System.out.println("Available: " + singleAvailable + "\n");
+
+        doubleRoom.displayDetails();
+        System.out.println("Available: " + doubleAvailable + "\n");
+
+        suite.displayDetails();
+        System.out.println("Available: " + suiteAvailable);
     }
 }
