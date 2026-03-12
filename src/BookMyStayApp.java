@@ -13,6 +13,10 @@ public class BookMyStayApp {
 
         inventory.displayInventory();
 
+        RoomSearchService searchService = new RoomSearchService(inventory);
+
+        searchService.searchAvailableRooms();
+
         // Static availability
         int singleAvailable = 5;
         int doubleAvailable = 3;
